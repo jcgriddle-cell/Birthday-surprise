@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@400;500;600;700&display=swap');
+
+:root {
+  --peach: #ffe2c9;
+  --light-peach: #fff2e6;
+  --orange: #df8a4c;
+  --brown: #8b421d;
+  --dark-brown: #663018;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: #f7e8dc;
+  color: var(--brown);
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.invitation {
+  position: relative;
+  width: min(1200px, 100%);
+  min-height: 650px;
+  overflow: hidden;
+  isolation: isolate;
+  border: 1px solid rgba(139, 66, 29, .22);
+  border-radius: 14px;
+  background: radial-gradient(circle at 75% 25%, rgba(255,255,255,.85), transparent 32%), linear-gradient(120deg, #f8c69f, #ffead8 52%, #ffd4b0);
+  box-shadow: 0 18px 55px rgba(102, 48, 24, .18);
+}
+
+.page {
+  position: relative;
+  min-height: 650px;
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+
+.floral {
+  position: absolute;
+  z-index: 4;
+  color: #c96e36;
+  opacity: .55;
+  font-size: clamp(35px, 6vw, 76px);
+  pointer-events: none;
+  text-shadow: 0 2px 12px rgba(201, 110, 54, .15);
+}
+.floral-left { 
+  top: 12px; 
+  left: 15px; 
+  writing-mode: vertical-rl; }
+.floral-right { 
+  bottom: 12px; 
+  right: 15px; 
+  writing-mode: vertical-rl; }
+
+.section-kicker { 
+  text-align: center; 
+  letter-spacing: 4px; 
+  font-size: 12px; 
+  margin: 0 0 5px; }
+.section-title {
+  font-family: 'Great Vibes', cursive;
+  font-weight: 400;
+  text-align: center;
+  font-size: clamp(42px, 5vw, 60px);
+  color: var(--brown);
+  margin: 0;
+}
+.title-flower { text-align: center; color: var(--orange); font-size: 23px; margin: 0 0 18px; }
+
+.event-screen {
+  padding: 34px clamp(22px, 5vw, 70px) 24px;
+  background: radial-gradient(circle at 15% 15%, rgba(255,255,255,.75), transparent 28%), linear-gradient(120deg, #ffe8d5, #fff4e9 55%, #fbd0ad);
+}
+.event-intro { 
+  text-align: center; 
+  font-size: 18px; 
+  margin: 0 auto 24px; }
+.event-card {
+  max-width: 850px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: .85fr 1.15fr;
+  overflow: hidden;
+  border: 1px solid rgba(139,66,29,.2);
+  border-radius: 16px;
+  background: rgba(255,250,244,.72);
+  box-shadow: 0 12px 30px rgba(102,48,24,.12);
+}
+.event-photo { 
+  position: relative; 
+  min-height: 340px; 
+  overflow: hidden; }
+.event-portrait { 
+  width: 100%; 
+  height: 100%; 
+  min-height: 340px; 
+  object-fit: cover; 
+  display: block; }
+.photo-overlay {
+  position: absolute;
+  inset: auto 0 0;
+  padding: 35px 15px 22px;
+  text-align: center;
+  color: #fff8ef;
+  background: linear-gradient(transparent, rgba(68,32,16,.82));
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.overlay-small { 
+  font-size: 12px; 
+  letter-spacing: 3px; }
+.overlay-script { font: 36px 'Great Vibes', cursive; }
+.event-info { padding: 28px clamp(20px, 4vw, 40px); display: flex; flex-direction: column; justify-content: center; gap: 18px; }
+.event-detail { display: flex; align-items: flex-start; gap: 15px; }
+.event-icon { flex: 0 0 38px; width: 38px; height: 38px; border-radius: 50%; display: grid; place-items: center; background: #f4d2b8; color: var(--brown); font-size: 22px; }
+.detail-label { font-size: 11px; letter-spacing: 3px; color: var(--orange); font-weight: 700; }
+.event-detail h3 { font-size: 23px; margin: 2px 0 0; font-weight: 600; }
+.event-detail p { font-size: 16px; margin: 2px 0 0; }
+.map-button { align-self: flex-start; display: inline-block; margin: 3px 0 0 53px; padding: 12px 20px; border-radius: 30px; background: var(--brown); color: #fff8f0; text-decoration: none; font-size: 13px; letter-spacing: 2px; }
+.map-button:hover { background: #a95629; }
+.map-button span { margin-left: 8px; }
+.event-note { text-align: center; font: 28px 'Great Vibes', cursive; margin: 18px 0 0; }
+
+.page-controls { max-width: 950px; margin: 18px auto 0; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.text-button { border: 0; background: transparent; color: var(--brown); font: 600 16px 'Cormorant Garamond', Georgia, serif; cursor: pointer; padding: 12px 4px; }
+.text-button:hover { text-decoration: underline; }
+.page-count { font-size: 13px; letter-spacing: 2px; }
+.page-count span { color: var(--orange); }
+.main-button { border: 0; border-radius: 40px; padding: 15px 34px; min-width: 150px; color: #fff8f0; background: linear-gradient(135deg, #a95629, #7e3518); font: 600 15px 'Cormorant Garamond', Georgia, serif; letter-spacing: 3px; cursor: pointer; box-shadow: 0 8px 18px rgba(126,53,24,.2); transition: transform .25s ease, box-shadow .25s ease; }
+.main-button span { font-size: 20px; margin-left: 9px; letter-spacing: 0; }
+.main-button:hover { transform: translateY(-3px); box-shadow: 0 12px 24px rgba(126,53,24,.3); }
+
+@media (max-width: 760px) {
+  body { padding: 10px; }
+  .invitation { min-height: 720px; }
+  .page { min-height: 720px; }
+  .event-screen { padding: 30px 20px 22px; }
+  .event-intro { font-size: 16px; margin-bottom: 18px; }
+  .event-card { grid-template-columns: 1fr; max-width: 430px; }
+  .event-photo { min-height: 180px; max-height: 210px; }
+  .event-portrait { min-height: 180px; }
+  .event-info { padding: 22px; gap: 17px; }
+  .event-detail h3 { font-size: 21px; }
+  .event-note { font-size: 25px; }
+  .page-controls { margin-top: 14px; }
+  .main-button { min-width: 115px; padding: 12px 15px; }
+}
+/* Styled Back Button */
+#eventBackButton {
+  min-width: 150px;
+  padding: 15px 25px;
+  border: 0;
+  border-radius: 40px;
+  color: #fff8f0;
+  background: linear-gradient(135deg, #a95629, #7e3518);
+  font: 600 15px 'Cormorant Garamond', Georgia, serif;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: 0 8px 18px rgba(126, 53, 24, 0.2);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+#eventBackButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px rgba(126, 53, 24, 0.3);
+}
+
+#eventBackButton:active {
+  transform: translateY(0);
+}
+
+/* Keep the Back button responsive on mobile */
+@media (max-width: 760px) {
+  #eventBackButton {
+    min-width: 115px;
+    padding: 12px 15px;
+  }
+}
+
+/* Page 3 entrance animation */
+@keyframes pageFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.invitation {
+    animation: pageFadeIn 0.7s ease both;
+}
+
+/* Page 3 to Page 4 transition */
+.invitation {
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.invitation.gallery-leaving {
+    opacity: 0;
+    transform: scale(0.92);
+    pointer-events: none;
+}

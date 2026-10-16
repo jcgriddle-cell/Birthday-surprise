@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Debut Invitation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="invitation" id="invitation">
+    <div class="floral floral-left">✿ ❀ ✾</div>
+    <div class="floral floral-right">❀ ✿ ❁</div>
+
+    <section class="welcome-screen" id="welcomeScreen">
+      <div class="portrait-wrap">
+        <!-- Replace celebrant.jpg with your actual photo filename -->
+        <img class="portrait" src="celebrant.jpg" alt="Photo of the debutant">
+      </div>
+
+      <div class="welcome-content">
+        <p class="eyebrow">YOU ARE CORDIALLY INVITED TO</p>
+        <div class="ornament">♛</div>
+        <h1>a Debut</h1>
+        <p class="tagline">A NEW CHAPTER, A BEAUTIFUL JOURNEY</p>
+        <div class="divider">❀</div>
+        <button id="enterButton" class="main-button">ENTER <span>→</span></button>
+      </div>
+    </section>
+
+    <section class="reveal-screen" id="revealScreen" aria-live="polite">
+      <div class="petal-field" id="petalField"></div>
+      <p class="reveal-small">A SPECIAL DAY IS BLOOMING</p>
+      <h2>Let the celebration begin</h2>
+      <p class="reveal-message">A beautiful evening, a cherished milestone, and memories to last forever.</p>
+      <button id="nextButton" class="main-button">NEXT <span>→</span></button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
