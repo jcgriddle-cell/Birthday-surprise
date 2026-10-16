@@ -210,3 +210,77 @@ h1 {
         right: -20px;
     }
 }
+
+/* Improved mobile Thank You page */
+@media (max-width: 600px) {
+    .thankyou-page {
+        min-height: 100svh;
+        padding: 22px 14px;
+    }
+
+    .thankyou-content {
+        width: 100%;
+        padding: 42px 20px;
+        border-radius: 14px;
+    }
+
+    .small-title {
+        font-size: 10px;
+        letter-spacing: 3px;
+        line-height: 1.7;
+        margin-bottom: 18px;
+    }
+
+    .crown {
+        font-size: 32px;
+    }
+
+    h1 {
+        font-size: clamp(58px, 15vw, 82px);
+        line-height: 1.15;
+    }
+
+    .divider {
+        max-width: 210px;
+        margin: 18px auto 22px;
+    }
+
+    .message {
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+    .closing {
+        font-size: 18px;
+        margin: 24px 0 28px;
+    }
+
+    #backToStart {
+        width: 100%;
+        max-width: 260px;
+        min-height: 48px;
+        padding: 14px 18px;
+    }
+
+    .flower-one {
+        font-size: 65px;
+        left: -15px;
+        top: 10px;
+    }
+
+    .flower-two {
+        font-size: 85px;
+        right: -15px;
+        bottom: 10px;
+    }
+}
+
+@media (max-width: 360px) {
+    .thankyou-content {
+        padding: 35px 15px;
+    }
+
+    .message {
+        font-size: 15px;
+    }
+}
