@@ -275,3 +275,95 @@ h1 {
   transform: scale(1.04);
   pointer-events: none;
 }
+
+/* Improved mobile invitation page */
+@media (max-width: 600px) {
+    body {
+        padding: 8px;
+        display: block;
+    }
+
+    .invitation {
+        width: 100%;
+        min-height: calc(100svh - 16px);
+        border-radius: 12px;
+    }
+
+    .welcome-screen {
+        min-height: calc(100svh - 16px);
+        grid-template-columns: 1fr;
+        grid-template-rows: minmax(230px, 36svh) auto;
+    }
+
+    .portrait-wrap {
+        min-height: 0;
+        height: 100%;
+        max-height: 300px;
+    }
+
+    .portrait {
+        min-height: 0;
+        height: 100%;
+        object-position: center 35%;
+    }
+
+    .welcome-content {
+        padding: 22px 18px 32px;
+    }
+
+    .eyebrow {
+        font-size: 12px;
+        letter-spacing: 1.5px;
+    }
+
+    h1 {
+        font-size: clamp(60px, 17vw, 88px);
+        margin-bottom: 14px;
+    }
+
+    .tagline {
+        font-size: 11px;
+        letter-spacing: 1.5px;
+    }
+
+    .divider {
+        margin: 18px auto 24px;
+    }
+
+    .main-button {
+        min-height: 48px;
+        padding: 13px 26px;
+    }
+
+    .floral {
+        font-size: 34px;
+    }
+
+    .reveal-screen {
+        padding: 24px 18px;
+    }
+
+    .reveal-small {
+        font-size: 11px;
+        letter-spacing: 2px;
+    }
+
+    .reveal-screen h2 {
+        font-size: clamp(42px, 11vw, 62px);
+    }
+
+    .reveal-message {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 380px) {
+    .welcome-content {
+        padding: 18px 12px 26px;
+    }
+
+    .tagline {
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+}
