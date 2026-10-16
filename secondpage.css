@@ -360,3 +360,95 @@ h1 {
     transform: translateY(-15px);
     pointer-events: none;
 }
+
+/* Improved mobile About page */
+@media (max-width: 600px) {
+    .invitation {
+        width: 100%;
+        min-height: 0;
+    }
+
+    .about-screen {
+        padding: 30px 18px 24px;
+    }
+
+    .section-kicker {
+        font-size: 10px;
+        letter-spacing: 2.5px;
+    }
+
+    .section-title {
+        font-size: clamp(38px, 10vw, 50px);
+    }
+
+    .title-flower {
+        margin-bottom: 14px;
+    }
+
+    .about-content {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 22px;
+    }
+
+    .about-photo-frame {
+        width: min(75%, 260px);
+    }
+
+    .about-photo {
+        height: 270px;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+
+    .about-paragraph {
+        font-size: 17px;
+        line-height: 1.6;
+    }
+
+    .personal-details {
+        text-align: left;
+        gap: 18px;
+    }
+
+    .detail-item strong {
+        font-size: 16px;
+    }
+
+    .detail-item p {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .page-controls {
+        margin-top: 26px;
+        gap: 10px;
+    }
+
+    #backToWelcomeButton,
+    .page-controls .main-button {
+        min-width: 0;
+        padding: 13px 18px;
+        font-size: 14px;
+    }
+
+    .floral {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 380px) {
+    .about-screen {
+        padding-right: 14px;
+        padding-left: 14px;
+    }
+
+    .about-photo {
+        height: 235px;
+    }
+
+    .page-controls {
+        gap: 8px;
+    }
+}
